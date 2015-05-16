@@ -1,6 +1,12 @@
 ---
 tasks:
 - id: 1
-  title: the project
-  description: gotta get it done now NNNOOOOWWWW!!!!!
-total: 1
+  title: do stuff
+  description: cause doing stuff is good
+- id: 2
+  title: do more stuff
+  description: cuz MOAR is BETTR
+- id: 3
+  title: change task 2
+  description: i now regret that silly comment
+total: 3
