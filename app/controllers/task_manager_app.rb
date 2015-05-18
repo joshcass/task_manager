@@ -25,5 +25,4 @@ class TaskManagerApp < Sinatra::Base
     @task = TaskManager.find(id.to_i)
     erb :show
   end
-  
 end
