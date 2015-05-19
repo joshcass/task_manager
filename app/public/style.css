@@ -1,4 +1,61 @@
 
 body {
-  background-color: red;
+  background-image: url('background.gif');
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center top;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  position: absolute;
+  margin-top: 28%;
+  margin-left: 5%;
+  font-size: 1.5vw;
+  font-family: "Helvetica, Arial", sans-serif;
+  font-weight: lighter;
+}
+
+h1, h2, h3 {
+  color: azure;
+  font-weight: lighter;
+}
+
+h4 {
+  color: oldlace;
+  font-weight: lighter;
+}
+
+h5 {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: oldlace;
+}
+
+a:hover{
+  color: maroon;
+  transition: color 0.5s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 7%;
+}
+
+li {
+  display: inline;
+  margin-left: 10px;
+}
+
+p {
+  text-align: left;
+  color: black;
 }
