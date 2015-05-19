@@ -26,10 +26,24 @@ class TaskManager
   end
 
   def self.raw_task(id)
-    raw_tasks.detect { |task| task["id"] == id }
+    raw_tasks.find { |task| task["id"] == id }
   end
 
   def self.find(id)
     Task.new(raw_task(id))
+  end
+
+  def self.update(id, data)
+    database.transaction do
+      target = database['tasks'].find { |element| element["id"] == id }
+      target["title"] = data[:title]
+      target["description"] = data[:description]
+    end
+  end
+
+  def self.delete(id)
+   database.transaction do
+     database['tasks'].delete_if { |task| task['id'] == id }
+   end
   end
 end
